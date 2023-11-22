@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script src="/js/Timeliner/Timeliner.js"></script>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        th{
+            border: 1px solid black;
+            padding: 3px;
+        }
+
+        td{
+            border: 1px solid black
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th data-name="title">Nama</th>
+                <th data-name="start_date">Dari</th>
+                <th data-name="end_date">Sampai</th>
+            </tr>
+        </thead>
+        <tbody style="overflow-y: scroll; height: 100px; display: block; width: inherit;">
+            <tr>
+                <td>Ahmeng</td>
+                <td>2023-01-14</td>
+                <td>2023-02-20</td>
+            </tr>
+            <tr>
+                <td>Afuang</td>
+                <td>2023-01-14</td>
+                <td>2023-03-20</td>
+            </tr>
+            <tr>
+                <td>Aliong</td>
+                <td>2023-01-10</td>
+                <td>2023-02-20</td>
+            </tr>
+            <tr>
+                <td>Aliong</td>
+                <td>2023-01-10</td>
+                <td>2023-02-20</td>
+            </tr>
+            <tr>
+                <td>Aliong</td>
+                <td>2023-01-10</td>
+                <td>2023-02-20</td>
+            </tr>
+            <tr>
+                <td>Aliong</td>
+                <td>2023-01-10</td>
+                <td>2023-02-20</td>
+            </tr>
+            <tr>
+                <td>Aliong</td>
+                <td>2023-01-10</td>
+                <td>2023-02-20</td>
+            </tr>
+            <tr>
+                <td>Aliong</td>
+                <td>2023-01-10</td>
+                <td>2023-02-20</td>
+            </tr>
+            <tr>
+                <td>Aliong</td>
+                <td>2023-01-10</td>
+                <td>2023-02-20</td>
+            </tr>
+            <tr>
+                <td>Aliong</td>
+                <td>2023-01-10</td>
+                <td>2023-02-20</td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        $(document).ready(function(){
+            $("table").Timeliner()
+        })
+    </script>
+</body>
+</html>
