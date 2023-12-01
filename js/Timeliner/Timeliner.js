@@ -182,7 +182,7 @@ listOfData.forEach(function(e){
     let data = getDateFromDayCount(i+2) == e.start ? `<div class='col-data' style='background: #3333cc; box-shadow: 0px 0px 10px black; position: absolute; width: 1000px; top: 2px; left: 0px;z-index: 2; height: 30px; border-radius: 5px'><div style='padding: 3px'>${e.name}</div></div>` : ""
     col+=`<div class='col col-day' style='width:1px; position: relative' data-address=''>${data}</div>`
   }
-
+  alert(width)
   let startEl = {dateIndex: $(`div[data-address=${e.start}]`).index(), monthIndex: $(`div[data-address=${e.start}]`).closest(".col-big").index( )}
   let endEl = {dateIndex: $(`div[data-address=${e.end}]`).index(), monthIndex: $(`div[data-address=${e.end}]`).closest(".col-big").index()}
 
