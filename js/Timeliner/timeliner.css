@@ -1,1 +1,77 @@
 
+    .col-day {
+      min-width: 20px;
+      background-color: rgb(255, 255, 255);
+
+    }
+
+    .col-day:nth-child(odd) {
+      background-color: rgb(255, 255, 255);
+    }
+
+    .row-day {
+      display: flex;
+    }
+
+    .row-data {
+      height: 60px;
+      position: relative;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .row-data:nth-child(odd) {
+      background-color: rgba(194, 194, 194, 0.137);
+    }
+
+
+    .card-timeline {
+      border-radius: 10px;
+      color: white;
+      padding: 1px;
+    }
+
+
+    .col-day {
+      border-right: 1px solid #0000002c;
+      border-bottom: 1px solid #0000002d;
+    }
+
+    .col-day:last-child {
+      border-right: none;
+
+    }
+
+    .col-big {
+      border-right: 1px solid #00000036;
+    }
+
+    .container-data {}
+
+    .col-data {
+      color: white;
+      box-shadow: 0px 0px 12px -5px black;
+    }
+
+
+
+    .tooltip-timeline {
+      position: absolute;
+      color: black;
+      background-color: white;
+      padding: 10px;
+      z-index: 1000;
+      border-radius: 3px;
+      box-shadow: 0px 4px 10px -5px;
+    }
+
+    .tooltip-timeline ul {
+      list-style-type: none;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .tooltip-timeline ul li {
+      display: block;
+
+    }
