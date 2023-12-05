@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="text"></p>
+    <canvas
+      id="canvas"
+      width="1280"
+      height="500"
+      style="background-color: rgb(255, 255, 255)"
+    ></canvas>
+
+    <script>
+      var canvas = document.getElementById("canvas");
+      // canvas.width = 100;
+      let data = [
+        {
+          task: "Complete Project A",
+          due_date: "2023-01-15",
+          deadline: "2023-01-10",
+          priority: "High",
+          assigned_to: "John Doe",
+          status: "In Progress",
+        },
+        {
+          task: "Review Document B",
+          due_date: "2023-11-30",
+          deadline: "2023-01-25",
+          priority: "Medium",
+          assigned_to: "Jane Smith",
+          status: "Pending",
+        },
+        {
+          task: "Submit Proposal C",
+          due_date: "2023-12-08",
+          deadline: "2023-12-05",
+          priority: "High",
+          assigned_to: "Sam Johnson",
+          status: "Not Started",
+        },
+        {
+          task: "Prepare Presentation D",
+          due_date: "2023-12-20",
+          deadline: "2023-12-15",
+          priority: "Medium",
+          assigned_to: "Alex Brown",
+          status: "In Progress",
+        },
+      ];
+
+      let timechart = new Timechart(canvas);
+      timechart.data = data;
+      timechart.render();
+    </script>
+  </body>
+</html>
